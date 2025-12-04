@@ -1,94 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BooyahContas - Contas de Free Fire</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #000000;
-      color: #f7d308;
-    }
-    header {
-      background: #000000;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-      border-bottom: 3px solid #f7d308;
-      letter-spacing: 1px;
-    }
-    .container {
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #0d0d0d;
-      border-radius: 12px;
-      padding: 15px;
-      text-align: center;
-      border: 2px solid #f7d30833;
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.03);
-      border-color: #f7d308;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      border: 2px solid #f7d30833;
-    }
-    .card h3 {
-      color: #f7d308;
-    }
-    .card p {
-      color: #ffffff;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #f7d308;
-      color: #000;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background: #fff;
-      color: #000;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booyah Streaming</title>
+
+<style>
+/* ----- ESTILO GERAL ----- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://wallpapers.com/images/featured/free-fire-background-1t7jqi9ao0.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+/* ----- CABEÇALHO ----- */
+header {
+    background: rgba(0,0,0,0.75);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #ffcc00;
+}
+
+header img {
+    height: 55px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* ----- CONTÊINER GERAL ----- */
+.container {
+    padding: 30px;
+}
+
+/* ----- BOTÕES MODERNOS ----- */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: .2s;
+}
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #ffd84d, #ffae00);
+}
+
+/* ----- CARDS DE CONTAS ----- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: .2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background: rgba(0,0,0,0.85);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #ffcc00;
+}
+
+.card p {
+    opacity: 0.8;
+}
+
+/* ----- RODAPÉ ----- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.9);
+    margin-top: 40px;
+    border-top: 2px solid #ffcc00;
+    font-size: 14px;
+}
+</style>
+
 </head>
 <body>
-  <header>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAioAAAIqCAYAAAAKMGGzAAAABGdBTUEAALGPC/xhBQAACk1pQ0NQUGhvdG9zaG9wIElDQyBwcm9mVGFnZWQ=" alt="Logo BooyahContas" style="max-width:200px; margin-bottom:10px;">
-    <div>BooyahContas - Contas de Free Fire</div>
-  </header>
 
-  <div class="container">
-    <!-- MODELO DE CONTA (replicar quantas quiser) -->
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Conta FF" />
-      <h3>Conta Level 78</h3>
-      <p>ID raros, passes antigos e skins exclusivas.</p>
-      <a class="btn" href="https://wa.me/55SEUNUMERO?text=Olá%2C+tenho+interesse+na+conta+Level+78">Comprar pelo WhatsApp</a>
+<!-- CABEÇALHO -->
+<header>
+    <img src="images/logo.png" alt="Logo">
+    <h1>Booyah Streaming</h1>
+</header>
+
+<div class="container">
+
+    <h2>Escolha sua Conta</h2>
+
+    <!-- ----- CARDS ----- -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>Conta Bronze</h3>
+            <p>Acesso básico • Ideal para começar</p>
+            <a href="#" class="btn">Selecionar</a>
+        </div>
+
+        <div class="card">
+            <h3>Conta Prata</h3>
+            <p>Mais recursos • Melhor custo benefício</p>
+            <a href="#" class="btn">Selecionar</a>
+        </div>
+
+        <div class="card">
+            <h3>Conta Ouro</h3>
+            <p>Acesso completo e suporte prioritário</p>
+            <a href="#" class="btn">Selecionar</a>
+        </div>
+
+        <div class="card">
+            <h3>Conta Diamante</h3>
+            <p>Tudo liberado + benefícios exclusivos</p>
+            <a href="#" class="btn">Selecionar</a>
+        </div>
+
+        <div class="card">
+            <h3>Conta Mestre</h3>
+            <p>Para criadores de conteúdo e streamers</p>
+            <a href="#" class="btn">Selecionar</a>
+        </div>
+
+        <div class="card">
+            <h3>Conta Lendária</h3>
+            <p>A experiência máxima • VIP completo</p>
+            <a href="#" class="btn">Selecionar</a>
+        </div>
+
     </div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Conta FF" />
-      <h3>Conta Level 52</h3>
-      <p>Várias caixas abertas e combinações top.</p>
-      <a class="btn" href="https://wa.me/55SEUNUMERO?text=Olá%2C+tenho+interesse+na+conta+Level+52">Comprar pelo WhatsApp</a>
-    </div>
+</div>
 
-  </div>
+<!-- RODAPÉ -->
+<footer>
+    © 2025 Booyah Streaming — Todos os direitos reservados.
+</footer>
+
 </body>
 </html>
